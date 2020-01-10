@@ -24,7 +24,7 @@ stages:
      steps:
      - task: Gradle@2
        inputs:
-         workingDirectory: ''
+         workingDirectory: '2019DeepSpace'
          gradleWrapperFile: 'gradlew'
          gradleOptions: '-Xmx3072m'
          publishJUnitResults: true
@@ -48,7 +48,7 @@ stages:
           jdkArchitectureOption: x64
       - task: Gradle@2
         inputs:
-          workingDirectory: ''
+          workingDirectory: '2019DeepSpace'
           gradleWrapperFile: 'gradlew'
           gradleOptions: '-Xmx3072m'
           publishJUnitResults: true
@@ -73,7 +73,7 @@ stages:
           jdkArchitectureOption: x86
       - task: Gradle@2
         inputs:
-          workingDirectory: ''
+          workingDirectory: '2019DeepSpace'
           gradleWrapperFile: 'gradlew'
           gradleOptions: '-Xmx1024m'
           publishJUnitResults: true
@@ -92,7 +92,7 @@ stages:
         displayName: 'Setup JDK'
       - task: Gradle@2
         inputs:
-          workingDirectory: ''
+          workingDirectory: '2019DeepSpace'
           gradleWrapperFile: 'gradlew'
           gradleOptions: '-Xmx3072m'
           javaHomeOption: 'path'
